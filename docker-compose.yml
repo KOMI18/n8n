@@ -11,8 +11,11 @@ services:
       - N8N_BASIC_AUTH_PASSWORD=monmotdepasse
       - N8N_HOST=ton-domaine-ou-url-de-render
       - N8N_PORT=5678
-      - WEBHOOK_URL=https:/render-n8n.onrender.com
+      - WEBHOOK_URL=https://n8n-2owh.onrender.com
       - EXECUTIONS_PROCESS=main
+      - N8N_SECURE_COOKIE=false
+      - N8N_HOST=n8n-2owh.onrender.com
+      - N8N_CORS_ORIGINS=https://n8n-2owh.onrender.com
     volumes:
       - n8n-data:/home/node/.n8n
 
